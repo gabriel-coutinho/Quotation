@@ -1,14 +1,15 @@
 package org.br.mineradora.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 import lombok.extern.jackson.Jacksonized;
 
 @Jacksonized
 @Data
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class CurrencyPriceDTO {
-    private USDBRL uSDBRL;
+    @JsonProperty("USDBRL")
+    private USDBRL USDBRL;
 }

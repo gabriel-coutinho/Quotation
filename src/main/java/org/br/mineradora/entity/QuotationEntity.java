@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name="quotation")
@@ -16,7 +16,7 @@ public class QuotationEntity {
     @GeneratedValue
     private Long id;
 
-    private Date date;
+    private LocalDateTime date;
 
     @Column(name = "currency_price")
     private BigDecimal currencyPrice;
