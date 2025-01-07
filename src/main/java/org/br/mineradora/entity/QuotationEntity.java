@@ -18,7 +18,7 @@ public class QuotationEntity {
 
     private LocalDateTime date;
 
-    @Column(name = "currency_price")
+    @Column(name = "currency_price", precision = 6, scale = 4)
     private BigDecimal currencyPrice;
 
     @Column(name = "pct_change")
